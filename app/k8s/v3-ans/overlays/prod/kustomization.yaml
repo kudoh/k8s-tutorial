@@ -30,8 +30,8 @@ configMapGenerator:
 
 images:
   - name: task-service
-    newName: 446197467950.dkr.ecr.ap-northeast-1.amazonaws.com/mamezou-tech/task-service
-    newTag: 1.0.0
+    newName: 446197467950.dkr.ecr.ap-northeast-1.amazonaws.com/mamezou-tech/task-service # {"$imagepolicy": "flux-system:task-service:name"}
+    newTag: 1.0.0 # {"$imagepolicy": "flux-system:task-service:tag"}
   - name: task-reporter
     newName: 446197467950.dkr.ecr.ap-northeast-1.amazonaws.com/mamezou-tech/task-reporter
     newTag: 1.0.0
